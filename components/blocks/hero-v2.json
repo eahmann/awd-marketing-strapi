@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_blocks_hero_v2s",
+  "info": {
+    "name": "HeroV2",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    },
+    "template": {
+      "type": "enumeration",
+      "enum": [
+        "centered_image_with_overlay",
+        "image_offset_left",
+        "image_offset_right"
+      ]
+    }
+  }
+}
