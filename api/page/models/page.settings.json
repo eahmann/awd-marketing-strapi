@@ -53,7 +53,8 @@
       "components": [
         "blocks.hero-v2",
         "blocks.carousel",
-        "blocks.call-to-action"
+        "blocks.call-to-action",
+        "blocks.contact-us-form"
       ],
       "required": true
     },
