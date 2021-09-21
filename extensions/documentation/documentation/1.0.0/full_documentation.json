@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/16/2021 9:57:27 PM"
+    "x-generation-date": "09/20/2021 11:07:25 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3828,14 +3828,6 @@
                           "newTab": {
                             "type": "boolean",
                             "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "enum": [
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
                           }
                         }
                       }
@@ -3949,14 +3941,6 @@
                           "newTab": {
                             "type": "boolean",
                             "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "enum": [
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
                           }
                         }
                       }
@@ -4254,14 +4238,6 @@
                           "newTab": {
                             "type": "boolean",
                             "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "enum": [
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
                           }
                         }
                       }
@@ -4375,14 +4351,6 @@
                           "newTab": {
                             "type": "boolean",
                             "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "enum": [
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
                           }
                         }
                       }
@@ -4661,7 +4629,9 @@
                         "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
-                        "blocks.contact-us-form"
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
                       ]
                     },
                     "id": {
@@ -4817,7 +4787,9 @@
                         "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
-                        "blocks.contact-us-form"
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
                       ]
                     },
                     "id": {
@@ -4910,7 +4882,9 @@
                         "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
-                        "blocks.contact-us-form"
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
                       ]
                     },
                     "id": {
@@ -4974,6 +4948,15 @@
                           }
                         }
                       }
+                    },
+                    "theme": {
+                      "type": "string",
+                      "enum": [
+                        "brand",
+                        "primary",
+                        "secondary",
+                        "muted"
+                      ]
                     }
                   },
                   "required": [
@@ -4988,7 +4971,9 @@
                         "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
-                        "blocks.contact-us-form"
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
                       ]
                     },
                     "id": {
@@ -4996,6 +4981,187 @@
                     },
                     "title": {
                       "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "blocks.hero-v2",
+                        "blocks.carousel",
+                        "blocks.call-to-action",
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "cards": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "image": {
+                            "required": [
+                              "id",
+                              "name",
+                              "hash",
+                              "mime",
+                              "size",
+                              "url",
+                              "provider"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "alternativeText": {
+                                "type": "string"
+                              },
+                              "caption": {
+                                "type": "string"
+                              },
+                              "width": {
+                                "type": "integer"
+                              },
+                              "height": {
+                                "type": "integer"
+                              },
+                              "formats": {
+                                "type": "object"
+                              },
+                              "hash": {
+                                "type": "string"
+                              },
+                              "ext": {
+                                "type": "string"
+                              },
+                              "mime": {
+                                "type": "string"
+                              },
+                              "size": {
+                                "type": "number"
+                              },
+                              "url": {
+                                "type": "string"
+                              },
+                              "previewUrl": {
+                                "type": "string"
+                              },
+                              "provider": {
+                                "type": "string"
+                              },
+                              "provider_metadata": {
+                                "type": "object"
+                              },
+                              "related": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "link": {
+                            "type": "object",
+                            "required": [
+                              "id",
+                              "href",
+                              "label",
+                              "isExternal",
+                              "newTab"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "href": {
+                                "type": "string"
+                              },
+                              "label": {
+                                "type": "string"
+                              },
+                              "isExternal": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "newTab": {
+                                "type": "boolean",
+                                "default": false
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "blocks.hero-v2",
+                        "blocks.carousel",
+                        "blocks.call-to-action",
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "questions": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "question": {
+                            "type": "string"
+                          },
+                          "answer": {
+                            "type": "string"
+                          }
+                        }
+                      }
                     }
                   },
                   "required": [
@@ -5209,7 +5375,9 @@
                         "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
-                        "blocks.contact-us-form"
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
                       ]
                     },
                     "id": {
@@ -5365,7 +5533,9 @@
                         "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
-                        "blocks.contact-us-form"
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
                       ]
                     },
                     "id": {
@@ -5458,7 +5628,9 @@
                         "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
-                        "blocks.contact-us-form"
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
                       ]
                     },
                     "id": {
@@ -5522,6 +5694,15 @@
                           }
                         }
                       }
+                    },
+                    "theme": {
+                      "type": "string",
+                      "enum": [
+                        "brand",
+                        "primary",
+                        "secondary",
+                        "muted"
+                      ]
                     }
                   },
                   "required": [
@@ -5536,7 +5717,9 @@
                         "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
-                        "blocks.contact-us-form"
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
                       ]
                     },
                     "id": {
@@ -5544,6 +5727,187 @@
                     },
                     "title": {
                       "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "blocks.hero-v2",
+                        "blocks.carousel",
+                        "blocks.call-to-action",
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "cards": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "image": {
+                            "required": [
+                              "id",
+                              "name",
+                              "hash",
+                              "mime",
+                              "size",
+                              "url",
+                              "provider"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "alternativeText": {
+                                "type": "string"
+                              },
+                              "caption": {
+                                "type": "string"
+                              },
+                              "width": {
+                                "type": "integer"
+                              },
+                              "height": {
+                                "type": "integer"
+                              },
+                              "formats": {
+                                "type": "object"
+                              },
+                              "hash": {
+                                "type": "string"
+                              },
+                              "ext": {
+                                "type": "string"
+                              },
+                              "mime": {
+                                "type": "string"
+                              },
+                              "size": {
+                                "type": "number"
+                              },
+                              "url": {
+                                "type": "string"
+                              },
+                              "previewUrl": {
+                                "type": "string"
+                              },
+                              "provider": {
+                                "type": "string"
+                              },
+                              "provider_metadata": {
+                                "type": "object"
+                              },
+                              "related": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "link": {
+                            "type": "object",
+                            "required": [
+                              "id",
+                              "href",
+                              "label",
+                              "isExternal",
+                              "newTab"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "href": {
+                                "type": "string"
+                              },
+                              "label": {
+                                "type": "string"
+                              },
+                              "isExternal": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "newTab": {
+                                "type": "boolean",
+                                "default": false
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "blocks.hero-v2",
+                        "blocks.carousel",
+                        "blocks.call-to-action",
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "questions": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "question": {
+                            "type": "string"
+                          },
+                          "answer": {
+                            "type": "string"
+                          }
+                        }
+                      }
                     }
                   },
                   "required": [

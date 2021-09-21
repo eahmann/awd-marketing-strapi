@@ -54,7 +54,9 @@
         "blocks.hero-v2",
         "blocks.carousel",
         "blocks.call-to-action",
-        "blocks.contact-us-form"
+        "blocks.contact-us-form",
+        "blocks.service-card-group",
+        "blocks.faq"
       ],
       "required": true
     },

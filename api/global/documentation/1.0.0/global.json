@@ -450,14 +450,6 @@
                           "newTab": {
                             "type": "boolean",
                             "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "enum": [
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
                           }
                         }
                       }
@@ -571,14 +563,6 @@
                           "newTab": {
                             "type": "boolean",
                             "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "enum": [
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
                           }
                         }
                       }
@@ -876,14 +860,6 @@
                           "newTab": {
                             "type": "boolean",
                             "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "enum": [
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
                           }
                         }
                       }
@@ -997,14 +973,6 @@
                           "newTab": {
                             "type": "boolean",
                             "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "enum": [
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
                           }
                         }
                       }

@@ -24,14 +24,6 @@
       "type": "boolean",
       "default": false,
       "required": true
-    },
-    "theme": {
-      "type": "enumeration",
-      "enum": [
-        "primary",
-        "secondary",
-        "muted"
-      ]
     }
   }
 }
