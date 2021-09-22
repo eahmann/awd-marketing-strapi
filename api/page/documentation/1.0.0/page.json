@@ -1028,6 +1028,9 @@
                     "id": {
                       "type": "string"
                     },
+                    "title": {
+                      "type": "string"
+                    },
                     "cards": {
                       "type": "array",
                       "items": {
@@ -1772,6 +1775,9 @@
                       ]
                     },
                     "id": {
+                      "type": "string"
+                    },
+                    "title": {
                       "type": "string"
                     },
                     "cards": {

@@ -262,7 +262,7 @@
     "/contact-us-form-submissions/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of contact-us-form-submissions documents",
+        "description": "Retrieve the number of contact-us-form-submissions documents",
         "responses": {
           "200": {
             "description": "Retrieve contact-us-form-submissions document(s)",

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/20/2021 11:07:25 PM"
+    "x-generation-date": "09/21/2021 7:56:04 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -307,7 +307,7 @@
     "/contact-us-form-submissions/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of contact-us-form-submissions documents",
+        "description": "Retrieve the number of contact-us-form-submissions documents",
         "responses": {
           "200": {
             "description": "Retrieve contact-us-form-submissions document(s)",
@@ -5003,6 +5003,9 @@
                     "id": {
                       "type": "string"
                     },
+                    "title": {
+                      "type": "string"
+                    },
                     "cards": {
                       "type": "array",
                       "items": {
@@ -5747,6 +5750,9 @@
                       ]
                     },
                     "id": {
+                      "type": "string"
+                    },
+                    "title": {
                       "type": "string"
                     },
                     "cards": {
