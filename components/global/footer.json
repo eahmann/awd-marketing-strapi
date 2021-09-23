@@ -6,7 +6,19 @@
   },
   "options": {},
   "attributes": {
-    "column": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "smallText": {
+      "type": "string"
+    },
+    "columns": {
       "type": "component",
       "repeatable": true,
       "component": "shared.footer-column"

@@ -798,10 +798,20 @@
                         "image_offset_left",
                         "image_offset_right"
                       ]
+                    },
+                    "marginTop": {
+                      "type": "boolean",
+                      "default": false
+                    },
+                    "marginBottom": {
+                      "type": "boolean",
+                      "default": true
                     }
                   },
                   "required": [
-                    "id"
+                    "id",
+                    "marginTop",
+                    "marginBottom"
                   ]
                 },
                 {
@@ -892,11 +902,21 @@
                           }
                         }
                       }
+                    },
+                    "marginTop": {
+                      "type": "boolean",
+                      "default": true
+                    },
+                    "marginBottom": {
+                      "type": "boolean",
+                      "default": false
                     }
                   },
                   "required": [
                     "id",
-                    "images"
+                    "images",
+                    "marginTop",
+                    "marginBottom"
                   ]
                 },
                 {
@@ -982,10 +1002,20 @@
                         "secondary",
                         "muted"
                       ]
+                    },
+                    "marginTop": {
+                      "type": "boolean",
+                      "default": true
+                    },
+                    "marginBottom": {
+                      "type": "boolean",
+                      "default": false
                     }
                   },
                   "required": [
-                    "id"
+                    "id",
+                    "marginTop",
+                    "marginBottom"
                   ]
                 },
                 {
@@ -1169,6 +1199,9 @@
                       "type": "string"
                     },
                     "title": {
+                      "type": "string"
+                    },
+                    "subtitle": {
                       "type": "string"
                     },
                     "questions": {
@@ -1547,10 +1580,20 @@
                         "image_offset_left",
                         "image_offset_right"
                       ]
+                    },
+                    "marginTop": {
+                      "type": "boolean",
+                      "default": false
+                    },
+                    "marginBottom": {
+                      "type": "boolean",
+                      "default": true
                     }
                   },
                   "required": [
-                    "id"
+                    "id",
+                    "marginTop",
+                    "marginBottom"
                   ]
                 },
                 {
@@ -1641,11 +1684,21 @@
                           }
                         }
                       }
+                    },
+                    "marginTop": {
+                      "type": "boolean",
+                      "default": true
+                    },
+                    "marginBottom": {
+                      "type": "boolean",
+                      "default": false
                     }
                   },
                   "required": [
                     "id",
-                    "images"
+                    "images",
+                    "marginTop",
+                    "marginBottom"
                   ]
                 },
                 {
@@ -1731,10 +1784,20 @@
                         "secondary",
                         "muted"
                       ]
+                    },
+                    "marginTop": {
+                      "type": "boolean",
+                      "default": true
+                    },
+                    "marginBottom": {
+                      "type": "boolean",
+                      "default": false
                     }
                   },
                   "required": [
-                    "id"
+                    "id",
+                    "marginTop",
+                    "marginBottom"
                   ]
                 },
                 {
@@ -1918,6 +1981,9 @@
                       "type": "string"
                     },
                     "title": {
+                      "type": "string"
+                    },
+                    "subtitle": {
                       "type": "string"
                     },
                     "questions": {

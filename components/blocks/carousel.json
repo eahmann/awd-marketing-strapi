@@ -18,6 +18,16 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "marginTop": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "marginBottom": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

@@ -10,9 +10,7 @@
     "image": {
       "model": "file",
       "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
@@ -38,6 +36,16 @@
         "image_offset_left",
         "image_offset_right"
       ]
+    },
+    "marginTop": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "marginBottom": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }
