@@ -36,7 +36,21 @@
       },
       "component": "global.footer"
     },
-    "seo": {
+    "favicon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "metadata": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -44,7 +58,7 @@
           "localized": true
         }
       },
-      "component": "shared.seo"
+      "component": "global.metadata"
     }
   }
 }

@@ -2,8 +2,16 @@
   "collectionName": "components_global_metadata",
   "info": {
     "name": "metadata",
-    "icon": "atlas"
+    "icon": "atlas",
+    "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "titleTemplate": {
+      "type": "string"
+    }
+  }
 }

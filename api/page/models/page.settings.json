@@ -33,7 +33,7 @@
       },
       "type": "string"
     },
-    "seo": {
+    "metadata": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {

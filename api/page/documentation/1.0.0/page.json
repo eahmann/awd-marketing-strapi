@@ -530,7 +530,7 @@
           "slug": {
             "type": "string"
           },
-          "seo": {
+          "metadata": {
             "type": "object",
             "required": [
               "id",
@@ -547,7 +547,7 @@
               "metaDescription": {
                 "type": "string"
               },
-              "metaImage": {
+              "shareImage": {
                 "required": [
                   "id",
                   "name",
@@ -614,27 +614,18 @@
                   }
                 }
               },
-              "meta": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id",
-                    "name",
-                    "content"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "content": {
-                      "type": "string"
-                    }
-                  }
-                }
+              "twitterCardType": {
+                "type": "string",
+                "default": "summary",
+                "enum": [
+                  "summary",
+                  "summary_large_image",
+                  "app",
+                  "player"
+                ]
+              },
+              "twitterUsername": {
+                "type": "string"
               },
               "preventIndexing": {
                 "type": "boolean",
@@ -1258,7 +1249,7 @@
                 "slug": {
                   "type": "string"
                 },
-                "seo": {
+                "metadata": {
                   "type": "component"
                 },
                 "blocks": {
@@ -1312,7 +1303,7 @@
           "slug": {
             "type": "string"
           },
-          "seo": {
+          "metadata": {
             "type": "object",
             "required": [
               "id",
@@ -1329,7 +1320,7 @@
               "metaDescription": {
                 "type": "string"
               },
-              "metaImage": {
+              "shareImage": {
                 "required": [
                   "id",
                   "name",
@@ -1396,27 +1387,18 @@
                   }
                 }
               },
-              "meta": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id",
-                    "name",
-                    "content"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "content": {
-                      "type": "string"
-                    }
-                  }
-                }
+              "twitterCardType": {
+                "type": "string",
+                "default": "summary",
+                "enum": [
+                  "summary",
+                  "summary_large_image",
+                  "app",
+                  "player"
+                ]
+              },
+              "twitterUsername": {
+                "type": "string"
               },
               "preventIndexing": {
                 "type": "boolean",
