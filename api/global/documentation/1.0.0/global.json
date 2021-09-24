@@ -721,7 +721,7 @@
               "title": {
                 "type": "string"
               },
-              "titleTemplate": {
+              "titleSuffix": {
                 "type": "string"
               }
             }
@@ -1109,7 +1109,7 @@
               "title": {
                 "type": "string"
               },
-              "titleTemplate": {
+              "titleSuffix": {
                 "type": "string"
               }
             }

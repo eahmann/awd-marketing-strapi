@@ -10,7 +10,7 @@
     "title": {
       "type": "string"
     },
-    "titleTemplate": {
+    "titleSuffix": {
       "type": "string"
     }
   }
