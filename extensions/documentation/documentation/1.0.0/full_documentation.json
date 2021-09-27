@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/26/2021 10:55:44 PM"
+    "x-generation-date": "09/27/2021 9:18:51 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4193,6 +4193,44 @@
               }
             }
           },
+          "contactInfo": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "addressLine1": {
+                "type": "string"
+              },
+              "addressLine2": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "stateCode": {
+                "type": "string"
+              },
+              "zipCode": {
+                "type": "integer"
+              },
+              "zipPlus": {
+                "type": "integer"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -4213,6 +4251,9 @@
                   "type": "string"
                 },
                 "metadata": {
+                  "type": "component"
+                },
+                "contactInfo": {
                   "type": "component"
                 },
                 "localizations": {
@@ -4666,6 +4707,44 @@
                 "type": "string"
               },
               "defaultUrl": {
+                "type": "string"
+              }
+            }
+          },
+          "contactInfo": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "addressLine1": {
+                "type": "string"
+              },
+              "addressLine2": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "stateCode": {
+                "type": "string"
+              },
+              "zipCode": {
+                "type": "integer"
+              },
+              "zipPlus": {
+                "type": "integer"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "email": {
                 "type": "string"
               }
             }
