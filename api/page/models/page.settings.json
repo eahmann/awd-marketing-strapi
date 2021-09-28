@@ -56,7 +56,8 @@
         "blocks.call-to-action",
         "blocks.contact-us-form",
         "blocks.service-card-group",
-        "blocks.faq"
+        "blocks.faq",
+        "blocks.image-gallery"
       ],
       "required": true
     },

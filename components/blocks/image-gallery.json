@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_blocks_image_galleries",
+  "info": {
+    "name": "Image Gallery",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "marginTop": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "marginBottom": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

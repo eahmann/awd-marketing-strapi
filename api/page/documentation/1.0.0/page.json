@@ -647,7 +647,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -815,7 +816,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -920,7 +922,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -1019,7 +1022,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -1043,7 +1047,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -1183,7 +1188,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -1218,6 +1224,112 @@
                   },
                   "required": [
                     "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "blocks.hero-v2",
+                        "blocks.carousel",
+                        "blocks.call-to-action",
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq",
+                        "blocks.image-gallery"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "images": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "name",
+                          "hash",
+                          "mime",
+                          "size",
+                          "url",
+                          "provider"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "alternativeText": {
+                            "type": "string"
+                          },
+                          "caption": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": "integer"
+                          },
+                          "height": {
+                            "type": "integer"
+                          },
+                          "formats": {
+                            "type": "object"
+                          },
+                          "hash": {
+                            "type": "string"
+                          },
+                          "ext": {
+                            "type": "string"
+                          },
+                          "mime": {
+                            "type": "string"
+                          },
+                          "size": {
+                            "type": "number"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "previewUrl": {
+                            "type": "string"
+                          },
+                          "provider": {
+                            "type": "string"
+                          },
+                          "provider_metadata": {
+                            "type": "object"
+                          },
+                          "related": {
+                            "type": "string"
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "marginTop": {
+                      "type": "boolean",
+                      "default": true
+                    },
+                    "marginBottom": {
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "images",
+                    "marginTop",
+                    "marginBottom"
                   ]
                 }
               ]
@@ -1420,7 +1532,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -1588,7 +1701,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -1693,7 +1807,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -1792,7 +1907,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -1816,7 +1932,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -1956,7 +2073,8 @@
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
-                        "blocks.faq"
+                        "blocks.faq",
+                        "blocks.image-gallery"
                       ]
                     },
                     "id": {
@@ -1991,6 +2109,112 @@
                   },
                   "required": [
                     "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "blocks.hero-v2",
+                        "blocks.carousel",
+                        "blocks.call-to-action",
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq",
+                        "blocks.image-gallery"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "images": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "name",
+                          "hash",
+                          "mime",
+                          "size",
+                          "url",
+                          "provider"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "alternativeText": {
+                            "type": "string"
+                          },
+                          "caption": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": "integer"
+                          },
+                          "height": {
+                            "type": "integer"
+                          },
+                          "formats": {
+                            "type": "object"
+                          },
+                          "hash": {
+                            "type": "string"
+                          },
+                          "ext": {
+                            "type": "string"
+                          },
+                          "mime": {
+                            "type": "string"
+                          },
+                          "size": {
+                            "type": "number"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "previewUrl": {
+                            "type": "string"
+                          },
+                          "provider": {
+                            "type": "string"
+                          },
+                          "provider_metadata": {
+                            "type": "object"
+                          },
+                          "related": {
+                            "type": "string"
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "marginTop": {
+                      "type": "boolean",
+                      "default": true
+                    },
+                    "marginBottom": {
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "images",
+                    "marginTop",
+                    "marginBottom"
                   ]
                 }
               ]
