@@ -648,7 +648,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -817,7 +818,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -923,7 +925,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -1023,7 +1026,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -1048,7 +1052,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -1189,16 +1194,14 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
                       "type": "string"
                     },
                     "title": {
-                      "type": "string"
-                    },
-                    "subtitle": {
                       "type": "string"
                     },
                     "questions": {
@@ -1220,10 +1223,20 @@
                           }
                         }
                       }
+                    },
+                    "marginTop": {
+                      "type": "boolean",
+                      "default": false
+                    },
+                    "marginBottom": {
+                      "type": "boolean",
+                      "default": true
                     }
                   },
                   "required": [
-                    "id"
+                    "id",
+                    "marginTop",
+                    "marginBottom"
                   ]
                 },
                 {
@@ -1237,7 +1250,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -1330,6 +1344,35 @@
                     "images",
                     "marginTop",
                     "marginBottom"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "blocks.hero-v2",
+                        "blocks.carousel",
+                        "blocks.call-to-action",
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq",
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
                   ]
                 }
               ]
@@ -1533,7 +1576,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -1702,7 +1746,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -1808,7 +1853,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -1908,7 +1954,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -1933,7 +1980,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -2074,16 +2122,14 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
                       "type": "string"
                     },
                     "title": {
-                      "type": "string"
-                    },
-                    "subtitle": {
                       "type": "string"
                     },
                     "questions": {
@@ -2105,10 +2151,20 @@
                           }
                         }
                       }
+                    },
+                    "marginTop": {
+                      "type": "boolean",
+                      "default": false
+                    },
+                    "marginBottom": {
+                      "type": "boolean",
+                      "default": true
                     }
                   },
                   "required": [
-                    "id"
+                    "id",
+                    "marginTop",
+                    "marginBottom"
                   ]
                 },
                 {
@@ -2122,7 +2178,8 @@
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
-                        "blocks.image-gallery"
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
                       ]
                     },
                     "id": {
@@ -2215,6 +2272,35 @@
                     "images",
                     "marginTop",
                     "marginBottom"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "blocks.hero-v2",
+                        "blocks.carousel",
+                        "blocks.call-to-action",
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq",
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
                   ]
                 }
               ]

@@ -10,13 +10,20 @@
     "title": {
       "type": "string"
     },
-    "subtitle": {
-      "type": "string"
-    },
     "questions": {
       "type": "component",
       "repeatable": true,
       "component": "shared.questions"
+    },
+    "marginTop": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "marginBottom": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }
