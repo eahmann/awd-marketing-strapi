@@ -36,6 +36,13 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "template": {
+      "type": "enumeration",
+      "enum": [
+        "wide_gradient",
+        "simple_justified"
+      ]
     }
   }
 }

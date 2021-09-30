@@ -6,4 +6,11 @@ module.exports = ({ env }) => ({
       secret: env("ADMIN_JWT_SECRET"),
     },
   },
+  vercel: {
+    token: env('VERCEL_TOKEN'),
+    projectId: env('VERCEL_PROJECT_ID'),
+    triggers: {
+        production: env('VERCEL_TRIGGER_PRODUCTION')
+    },
+}
 });

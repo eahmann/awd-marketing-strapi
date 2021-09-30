@@ -1007,6 +1007,13 @@
                     "marginBottom": {
                       "type": "boolean",
                       "default": false
+                    },
+                    "template": {
+                      "type": "string",
+                      "enum": [
+                        "wide_gradient",
+                        "simple_justified"
+                      ]
                     }
                   },
                   "required": [
@@ -1935,6 +1942,13 @@
                     "marginBottom": {
                       "type": "boolean",
                       "default": false
+                    },
+                    "template": {
+                      "type": "string",
+                      "enum": [
+                        "wide_gradient",
+                        "simple_justified"
+                      ]
                     }
                   },
                   "required": [
