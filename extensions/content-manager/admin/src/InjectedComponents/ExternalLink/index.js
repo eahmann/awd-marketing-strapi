@@ -54,7 +54,7 @@ const ExternalLink = () => {
   return (
     <li>
       <StyledExternalLink
-        href={`http://hci.ahmann.dev/api/preview?secret=fq6ndWgcEkCiddFtoJrTseJhIZw&slug=${modifiedData.slug}&locale=${modifiedData.locale}&apiID=${layout.apiID}&kind=${layout.kind}`}
+        href={`https://hci.ahmann.dev/api/preview?secret=fq6ndWgcEkCiddFtoJrTseJhIZw&slug=${modifiedData.slug}&locale=${modifiedData.locale}&apiID=${layout.apiID}&kind=${layout.kind}`}
         target="_blank"
         rel="noopener noreferrer"
         title="page preview"
