@@ -10,7 +10,9 @@
     "image": {
       "model": "file",
       "via": "related",
-      "allowedTypes": ["images"],
+      "allowedTypes": [
+        "images"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
@@ -27,7 +29,8 @@
     "buttons": {
       "type": "component",
       "repeatable": true,
-      "component": "shared.button"
+      "component": "shared.button",
+      "max": 2
     },
     "template": {
       "type": "enumeration",

@@ -24,7 +24,8 @@
         "brand",
         "primary",
         "secondary",
-        "muted"
+        "muted",
+        "white"
       ]
     },
     "marginTop": {

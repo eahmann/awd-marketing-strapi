@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/29/2021 10:47:23 PM"
+    "x-generation-date": "09/30/2021 9:02:19 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4770,6 +4770,7 @@
         "required": [
           "id",
           "title",
+          "metadata",
           "blocks"
         ],
         "properties": {
@@ -5034,7 +5035,8 @@
                             "default": true
                           }
                         }
-                      }
+                      },
+                      "maxItems": 2
                     },
                     "template": {
                       "type": "string",
@@ -5249,7 +5251,8 @@
                         "brand",
                         "primary",
                         "secondary",
-                        "muted"
+                        "muted",
+                        "white"
                       ]
                     },
                     "marginTop": {
@@ -5641,16 +5644,13 @@
             "type": "string",
             "format": "date-time"
           },
-          "ready": {
-            "type": "boolean",
-            "default": true
-          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "title",
+                "metadata",
                 "blocks"
               ],
               "properties": {
@@ -5672,9 +5672,6 @@
                 "publish_at": {
                   "type": "string"
                 },
-                "ready": {
-                  "type": "boolean"
-                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -5682,6 +5679,9 @@
                   }
                 },
                 "locale": {
+                  "type": "string"
+                },
+                "published_at": {
                   "type": "string"
                 },
                 "created_by": {
@@ -5695,12 +5695,17 @@
           },
           "locale": {
             "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
       "NewPage": {
         "required": [
           "title",
+          "metadata",
           "blocks"
         ],
         "properties": {
@@ -5962,7 +5967,8 @@
                             "default": true
                           }
                         }
-                      }
+                      },
+                      "maxItems": 2
                     },
                     "template": {
                       "type": "string",
@@ -6177,7 +6183,8 @@
                         "brand",
                         "primary",
                         "secondary",
-                        "muted"
+                        "muted",
+                        "white"
                       ]
                     },
                     "marginTop": {
@@ -6569,10 +6576,6 @@
             "type": "string",
             "format": "date-time"
           },
-          "ready": {
-            "type": "boolean",
-            "default": true
-          },
           "localizations": {
             "type": "array",
             "items": {
@@ -6581,6 +6584,10 @@
           },
           "locale": {
             "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           },
           "created_by": {
             "type": "string"
