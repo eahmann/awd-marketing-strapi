@@ -7,13 +7,16 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "cards": {
       "type": "component",
       "repeatable": true,
       "component": "shared.service-card"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.basic-block-settings",
+      "required": true
     }
   }
 }

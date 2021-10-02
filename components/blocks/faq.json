@@ -15,14 +15,10 @@
       "repeatable": true,
       "component": "shared.questions"
     },
-    "marginTop": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
-    "marginBottom": {
-      "type": "boolean",
-      "default": true,
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.basic-block-settings",
       "required": true
     }
   }

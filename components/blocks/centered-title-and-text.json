@@ -2,7 +2,8 @@
   "collectionName": "components_blocks_centered_title_and_texts",
   "info": {
     "name": "Centered title and text",
-    "icon": "minus"
+    "icon": "minus",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,7 +11,13 @@
       "type": "string"
     },
     "text": {
-      "type": "string"
+      "type": "text"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.basic-block-settings",
+      "required": true
     }
   }
 }

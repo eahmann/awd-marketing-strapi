@@ -465,11 +465,7 @@
                     "id",
                     "href",
                     "label",
-                    "isExternal",
-                    "newTab",
-                    "theme",
-                    "outline",
-                    "shadow"
+                    "settings"
                   ],
                   "properties": {
                     "id": {
@@ -481,31 +477,47 @@
                     "label": {
                       "type": "string"
                     },
-                    "isExternal": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "newTab": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "theme": {
-                      "type": "string",
-                      "default": "brand",
-                      "enum": [
-                        "brand",
-                        "primary",
-                        "secondary",
-                        "muted"
-                      ]
-                    },
-                    "outline": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "shadow": {
-                      "type": "boolean",
-                      "default": true
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "isExternal",
+                        "newTab",
+                        "theme",
+                        "outline",
+                        "shadow"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "isExternal": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "newTab": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "theme": {
+                          "type": "string",
+                          "default": "brand",
+                          "enum": [
+                            "brand",
+                            "primary",
+                            "secondary",
+                            "muted"
+                          ]
+                        },
+                        "outline": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "shadow": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   }
                 }
@@ -799,7 +811,7 @@
               },
               "twitterCardType": {
                 "type": "string",
-                "default": "summary",
+                "default": "summary_large_image",
                 "enum": [
                   "summary",
                   "summary_large_image",
@@ -1050,11 +1062,7 @@
                     "id",
                     "href",
                     "label",
-                    "isExternal",
-                    "newTab",
-                    "theme",
-                    "outline",
-                    "shadow"
+                    "settings"
                   ],
                   "properties": {
                     "id": {
@@ -1066,31 +1074,47 @@
                     "label": {
                       "type": "string"
                     },
-                    "isExternal": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "newTab": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "theme": {
-                      "type": "string",
-                      "default": "brand",
-                      "enum": [
-                        "brand",
-                        "primary",
-                        "secondary",
-                        "muted"
-                      ]
-                    },
-                    "outline": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "shadow": {
-                      "type": "boolean",
-                      "default": true
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "isExternal",
+                        "newTab",
+                        "theme",
+                        "outline",
+                        "shadow"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "isExternal": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "newTab": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "theme": {
+                          "type": "string",
+                          "default": "brand",
+                          "enum": [
+                            "brand",
+                            "primary",
+                            "secondary",
+                            "muted"
+                          ]
+                        },
+                        "outline": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "shadow": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   }
                 }
@@ -1317,7 +1341,7 @@
               },
               "twitterCardType": {
                 "type": "string",
-                "default": "summary",
+                "default": "summary_large_image",
                 "enum": [
                   "summary",
                   "summary_large_image",

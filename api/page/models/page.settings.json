@@ -52,14 +52,14 @@
       },
       "type": "dynamiczone",
       "components": [
-        "blocks.hero-v2",
         "blocks.carousel",
         "blocks.call-to-action",
         "blocks.contact-us-form",
         "blocks.service-card-group",
         "blocks.faq",
         "blocks.image-gallery",
-        "blocks.centered-title-and-text"
+        "blocks.centered-title-and-text",
+        "blocks.hero"
       ],
       "required": true
     },

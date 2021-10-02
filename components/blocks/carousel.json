@@ -19,14 +19,10 @@
       "required": true,
       "pluginOptions": {}
     },
-    "marginTop": {
-      "type": "boolean",
-      "default": true,
-      "required": true
-    },
-    "marginBottom": {
-      "type": "boolean",
-      "default": false,
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.basic-block-settings",
       "required": true
     }
   }

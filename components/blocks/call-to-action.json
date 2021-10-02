@@ -11,39 +11,18 @@
       "type": "string"
     },
     "text": {
-      "type": "richtext"
+      "type": "text"
     },
     "buttons": {
       "type": "component",
       "repeatable": true,
       "component": "shared.button"
     },
-    "theme": {
-      "type": "enumeration",
-      "enum": [
-        "brand",
-        "primary",
-        "secondary",
-        "muted",
-        "white"
-      ]
-    },
-    "marginTop": {
-      "type": "boolean",
-      "default": true,
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.cta-block-settings",
       "required": true
-    },
-    "marginBottom": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
-    "template": {
-      "type": "enumeration",
-      "enum": [
-        "wide_gradient",
-        "simple_justified"
-      ]
     }
   }
 }

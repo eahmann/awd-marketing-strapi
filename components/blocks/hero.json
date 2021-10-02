@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_blocks_hero_v2s",
+  "collectionName": "components_blocks_heroes",
   "info": {
-    "name": "HeroV2",
+    "name": "Hero",
     "icon": "archway",
     "description": ""
   },
@@ -24,7 +24,7 @@
       "type": "string"
     },
     "text": {
-      "type": "string"
+      "type": "text"
     },
     "buttons": {
       "type": "component",
@@ -32,22 +32,10 @@
       "component": "shared.button",
       "max": 2
     },
-    "template": {
-      "type": "enumeration",
-      "enum": [
-        "centered_image_with_overlay",
-        "image_offset_left",
-        "image_offset_right"
-      ]
-    },
-    "marginTop": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
-    "marginBottom": {
-      "type": "boolean",
-      "default": true,
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.hero-block-settings",
       "required": true
     }
   }

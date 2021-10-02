@@ -643,185 +643,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "image": {
-                      "required": [
-                        "id",
-                        "name",
-                        "hash",
-                        "mime",
-                        "size",
-                        "url",
-                        "provider"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "alternativeText": {
-                          "type": "string"
-                        },
-                        "caption": {
-                          "type": "string"
-                        },
-                        "width": {
-                          "type": "integer"
-                        },
-                        "height": {
-                          "type": "integer"
-                        },
-                        "formats": {
-                          "type": "object"
-                        },
-                        "hash": {
-                          "type": "string"
-                        },
-                        "ext": {
-                          "type": "string"
-                        },
-                        "mime": {
-                          "type": "string"
-                        },
-                        "size": {
-                          "type": "number"
-                        },
-                        "url": {
-                          "type": "string"
-                        },
-                        "previewUrl": {
-                          "type": "string"
-                        },
-                        "provider": {
-                          "type": "string"
-                        },
-                        "provider_metadata": {
-                          "type": "object"
-                        },
-                        "related": {
-                          "type": "string"
-                        },
-                        "created_by": {
-                          "type": "string"
-                        },
-                        "updated_by": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "title": {
-                      "type": "string"
-                    },
-                    "label": {
-                      "type": "string"
-                    },
-                    "text": {
-                      "type": "string"
-                    },
-                    "buttons": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id",
-                          "href",
-                          "label",
-                          "isExternal",
-                          "newTab",
-                          "theme",
-                          "outline",
-                          "shadow"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "href": {
-                            "type": "string"
-                          },
-                          "label": {
-                            "type": "string"
-                          },
-                          "isExternal": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "newTab": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "default": "brand",
-                            "enum": [
-                              "brand",
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
-                          },
-                          "outline": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "shadow": {
-                            "type": "boolean",
-                            "default": true
-                          }
-                        }
-                      },
-                      "maxItems": 2
-                    },
-                    "template": {
-                      "type": "string",
-                      "enum": [
-                        "centered_image_with_overlay",
-                        "image_offset_left",
-                        "image_offset_right"
-                      ]
-                    },
-                    "marginTop": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "marginBottom": {
-                      "type": "boolean",
-                      "default": true
-                    }
-                  },
-                  "required": [
-                    "id",
-                    "marginTop",
-                    "marginBottom"
-                  ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "blocks.hero-v2",
-                        "blocks.carousel",
-                        "blocks.call-to-action",
-                        "blocks.contact-us-form",
-                        "blocks.service-card-group",
-                        "blocks.faq",
-                        "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -900,20 +729,32 @@
                         }
                       }
                     },
-                    "marginTop": {
-                      "type": "boolean",
-                      "default": true
-                    },
-                    "marginBottom": {
-                      "type": "boolean",
-                      "default": false
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   },
                   "required": [
                     "id",
                     "images",
-                    "marginTop",
-                    "marginBottom"
+                    "settings"
                   ]
                 },
                 {
@@ -921,14 +762,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -948,11 +789,7 @@
                           "id",
                           "href",
                           "label",
-                          "isExternal",
-                          "newTab",
-                          "theme",
-                          "outline",
-                          "shadow"
+                          "settings"
                         ],
                         "properties": {
                           "id": {
@@ -964,65 +801,93 @@
                           "label": {
                             "type": "string"
                           },
-                          "isExternal": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "newTab": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "default": "brand",
-                            "enum": [
-                              "brand",
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
-                          },
-                          "outline": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "shadow": {
-                            "type": "boolean",
-                            "default": true
+                          "settings": {
+                            "type": "object",
+                            "required": [
+                              "id",
+                              "isExternal",
+                              "newTab",
+                              "theme",
+                              "outline",
+                              "shadow"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "isExternal": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "newTab": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "theme": {
+                                "type": "string",
+                                "default": "brand",
+                                "enum": [
+                                  "brand",
+                                  "primary",
+                                  "secondary",
+                                  "muted"
+                                ]
+                              },
+                              "outline": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "shadow": {
+                                "type": "boolean",
+                                "default": true
+                              }
+                            }
                           }
                         }
                       }
                     },
-                    "theme": {
-                      "type": "string",
-                      "enum": [
-                        "brand",
-                        "primary",
-                        "secondary",
-                        "muted",
-                        "white"
-                      ]
-                    },
-                    "marginTop": {
-                      "type": "boolean",
-                      "default": true
-                    },
-                    "marginBottom": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "template": {
-                      "type": "string",
-                      "enum": [
-                        "wide_gradient",
-                        "simple_justified"
-                      ]
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "theme": {
+                          "type": "string",
+                          "enum": [
+                            "brand",
+                            "primary",
+                            "secondary",
+                            "muted",
+                            "white"
+                          ]
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "template": {
+                          "type": "string",
+                          "enum": [
+                            "wide_gradient",
+                            "simple_justified"
+                          ]
+                        }
+                      }
                     }
                   },
                   "required": [
                     "id",
-                    "marginTop",
-                    "marginBottom"
+                    "settings"
                   ]
                 },
                 {
@@ -1030,14 +895,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -1056,20 +921,17 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
-                      "type": "string"
-                    },
-                    "title": {
                       "type": "string"
                     },
                     "cards": {
@@ -1187,10 +1049,32 @@
                           }
                         }
                       }
+                    },
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   },
                   "required": [
-                    "id"
+                    "id",
+                    "settings"
                   ]
                 },
                 {
@@ -1198,14 +1082,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -1234,19 +1118,31 @@
                         }
                       }
                     },
-                    "marginTop": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "marginBottom": {
-                      "type": "boolean",
-                      "default": true
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   },
                   "required": [
                     "id",
-                    "marginTop",
-                    "marginBottom"
+                    "settings"
                   ]
                 },
                 {
@@ -1254,14 +1150,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -1340,20 +1236,32 @@
                         }
                       }
                     },
-                    "marginTop": {
-                      "type": "boolean",
-                      "default": true
-                    },
-                    "marginBottom": {
-                      "type": "boolean",
-                      "default": false
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   },
                   "required": [
                     "id",
                     "images",
-                    "marginTop",
-                    "marginBottom"
+                    "settings"
                   ]
                 },
                 {
@@ -1361,14 +1269,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -1379,10 +1287,227 @@
                     },
                     "text": {
                       "type": "string"
+                    },
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   },
                   "required": [
-                    "id"
+                    "id",
+                    "settings"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "blocks.carousel",
+                        "blocks.call-to-action",
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq",
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "image": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "buttons": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "href",
+                          "label",
+                          "settings"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "href": {
+                            "type": "string"
+                          },
+                          "label": {
+                            "type": "string"
+                          },
+                          "settings": {
+                            "type": "object",
+                            "required": [
+                              "id",
+                              "isExternal",
+                              "newTab",
+                              "theme",
+                              "outline",
+                              "shadow"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "isExternal": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "newTab": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "theme": {
+                                "type": "string",
+                                "default": "brand",
+                                "enum": [
+                                  "brand",
+                                  "primary",
+                                  "secondary",
+                                  "muted"
+                                ]
+                              },
+                              "outline": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "shadow": {
+                                "type": "boolean",
+                                "default": true
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "maxItems": 2
+                    },
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "template": {
+                          "type": "string",
+                          "enum": [
+                            "centered_image_with_overlay",
+                            "image_offset_left",
+                            "image_offset_right"
+                          ]
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "settings"
                   ]
                 }
               ]
@@ -1575,185 +1700,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "image": {
-                      "required": [
-                        "id",
-                        "name",
-                        "hash",
-                        "mime",
-                        "size",
-                        "url",
-                        "provider"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "alternativeText": {
-                          "type": "string"
-                        },
-                        "caption": {
-                          "type": "string"
-                        },
-                        "width": {
-                          "type": "integer"
-                        },
-                        "height": {
-                          "type": "integer"
-                        },
-                        "formats": {
-                          "type": "object"
-                        },
-                        "hash": {
-                          "type": "string"
-                        },
-                        "ext": {
-                          "type": "string"
-                        },
-                        "mime": {
-                          "type": "string"
-                        },
-                        "size": {
-                          "type": "number"
-                        },
-                        "url": {
-                          "type": "string"
-                        },
-                        "previewUrl": {
-                          "type": "string"
-                        },
-                        "provider": {
-                          "type": "string"
-                        },
-                        "provider_metadata": {
-                          "type": "object"
-                        },
-                        "related": {
-                          "type": "string"
-                        },
-                        "created_by": {
-                          "type": "string"
-                        },
-                        "updated_by": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "title": {
-                      "type": "string"
-                    },
-                    "label": {
-                      "type": "string"
-                    },
-                    "text": {
-                      "type": "string"
-                    },
-                    "buttons": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id",
-                          "href",
-                          "label",
-                          "isExternal",
-                          "newTab",
-                          "theme",
-                          "outline",
-                          "shadow"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "href": {
-                            "type": "string"
-                          },
-                          "label": {
-                            "type": "string"
-                          },
-                          "isExternal": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "newTab": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "default": "brand",
-                            "enum": [
-                              "brand",
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
-                          },
-                          "outline": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "shadow": {
-                            "type": "boolean",
-                            "default": true
-                          }
-                        }
-                      },
-                      "maxItems": 2
-                    },
-                    "template": {
-                      "type": "string",
-                      "enum": [
-                        "centered_image_with_overlay",
-                        "image_offset_left",
-                        "image_offset_right"
-                      ]
-                    },
-                    "marginTop": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "marginBottom": {
-                      "type": "boolean",
-                      "default": true
-                    }
-                  },
-                  "required": [
-                    "id",
-                    "marginTop",
-                    "marginBottom"
-                  ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "blocks.hero-v2",
-                        "blocks.carousel",
-                        "blocks.call-to-action",
-                        "blocks.contact-us-form",
-                        "blocks.service-card-group",
-                        "blocks.faq",
-                        "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -1832,20 +1786,32 @@
                         }
                       }
                     },
-                    "marginTop": {
-                      "type": "boolean",
-                      "default": true
-                    },
-                    "marginBottom": {
-                      "type": "boolean",
-                      "default": false
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   },
                   "required": [
                     "id",
                     "images",
-                    "marginTop",
-                    "marginBottom"
+                    "settings"
                   ]
                 },
                 {
@@ -1853,14 +1819,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -1880,11 +1846,7 @@
                           "id",
                           "href",
                           "label",
-                          "isExternal",
-                          "newTab",
-                          "theme",
-                          "outline",
-                          "shadow"
+                          "settings"
                         ],
                         "properties": {
                           "id": {
@@ -1896,65 +1858,93 @@
                           "label": {
                             "type": "string"
                           },
-                          "isExternal": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "newTab": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "theme": {
-                            "type": "string",
-                            "default": "brand",
-                            "enum": [
-                              "brand",
-                              "primary",
-                              "secondary",
-                              "muted"
-                            ]
-                          },
-                          "outline": {
-                            "type": "boolean",
-                            "default": false
-                          },
-                          "shadow": {
-                            "type": "boolean",
-                            "default": true
+                          "settings": {
+                            "type": "object",
+                            "required": [
+                              "id",
+                              "isExternal",
+                              "newTab",
+                              "theme",
+                              "outline",
+                              "shadow"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "isExternal": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "newTab": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "theme": {
+                                "type": "string",
+                                "default": "brand",
+                                "enum": [
+                                  "brand",
+                                  "primary",
+                                  "secondary",
+                                  "muted"
+                                ]
+                              },
+                              "outline": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "shadow": {
+                                "type": "boolean",
+                                "default": true
+                              }
+                            }
                           }
                         }
                       }
                     },
-                    "theme": {
-                      "type": "string",
-                      "enum": [
-                        "brand",
-                        "primary",
-                        "secondary",
-                        "muted",
-                        "white"
-                      ]
-                    },
-                    "marginTop": {
-                      "type": "boolean",
-                      "default": true
-                    },
-                    "marginBottom": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "template": {
-                      "type": "string",
-                      "enum": [
-                        "wide_gradient",
-                        "simple_justified"
-                      ]
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "theme": {
+                          "type": "string",
+                          "enum": [
+                            "brand",
+                            "primary",
+                            "secondary",
+                            "muted",
+                            "white"
+                          ]
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "template": {
+                          "type": "string",
+                          "enum": [
+                            "wide_gradient",
+                            "simple_justified"
+                          ]
+                        }
+                      }
                     }
                   },
                   "required": [
                     "id",
-                    "marginTop",
-                    "marginBottom"
+                    "settings"
                   ]
                 },
                 {
@@ -1962,14 +1952,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -1988,20 +1978,17 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
-                      "type": "string"
-                    },
-                    "title": {
                       "type": "string"
                     },
                     "cards": {
@@ -2119,10 +2106,32 @@
                           }
                         }
                       }
+                    },
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   },
                   "required": [
-                    "id"
+                    "id",
+                    "settings"
                   ]
                 },
                 {
@@ -2130,14 +2139,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -2166,19 +2175,31 @@
                         }
                       }
                     },
-                    "marginTop": {
-                      "type": "boolean",
-                      "default": false
-                    },
-                    "marginBottom": {
-                      "type": "boolean",
-                      "default": true
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   },
                   "required": [
                     "id",
-                    "marginTop",
-                    "marginBottom"
+                    "settings"
                   ]
                 },
                 {
@@ -2186,14 +2207,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -2272,20 +2293,32 @@
                         }
                       }
                     },
-                    "marginTop": {
-                      "type": "boolean",
-                      "default": true
-                    },
-                    "marginBottom": {
-                      "type": "boolean",
-                      "default": false
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   },
                   "required": [
                     "id",
                     "images",
-                    "marginTop",
-                    "marginBottom"
+                    "settings"
                   ]
                 },
                 {
@@ -2293,14 +2326,14 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "blocks.hero-v2",
                         "blocks.carousel",
                         "blocks.call-to-action",
                         "blocks.contact-us-form",
                         "blocks.service-card-group",
                         "blocks.faq",
                         "blocks.image-gallery",
-                        "blocks.centered-title-and-text"
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
                       ]
                     },
                     "id": {
@@ -2311,10 +2344,227 @@
                     },
                     "text": {
                       "type": "string"
+                    },
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": true
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
                     }
                   },
                   "required": [
-                    "id"
+                    "id",
+                    "settings"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "blocks.carousel",
+                        "blocks.call-to-action",
+                        "blocks.contact-us-form",
+                        "blocks.service-card-group",
+                        "blocks.faq",
+                        "blocks.image-gallery",
+                        "blocks.centered-title-and-text",
+                        "blocks.hero"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "image": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "buttons": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "href",
+                          "label",
+                          "settings"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "href": {
+                            "type": "string"
+                          },
+                          "label": {
+                            "type": "string"
+                          },
+                          "settings": {
+                            "type": "object",
+                            "required": [
+                              "id",
+                              "isExternal",
+                              "newTab",
+                              "theme",
+                              "outline",
+                              "shadow"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "isExternal": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "newTab": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "theme": {
+                                "type": "string",
+                                "default": "brand",
+                                "enum": [
+                                  "brand",
+                                  "primary",
+                                  "secondary",
+                                  "muted"
+                                ]
+                              },
+                              "outline": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "shadow": {
+                                "type": "boolean",
+                                "default": true
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "maxItems": 2
+                    },
+                    "settings": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "marginTop",
+                        "marginBottom"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "template": {
+                          "type": "string",
+                          "enum": [
+                            "centered_image_with_overlay",
+                            "image_offset_left",
+                            "image_offset_right"
+                          ]
+                        },
+                        "marginTop": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "marginBottom": {
+                          "type": "boolean",
+                          "default": true
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "settings"
                   ]
                 }
               ]
