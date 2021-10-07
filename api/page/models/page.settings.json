@@ -58,8 +58,9 @@
         "blocks.service-card-group",
         "blocks.faq",
         "blocks.image-gallery",
-        "blocks.centered-title-and-text",
-        "blocks.hero"
+        "blocks.title-and-text",
+        "blocks.hero",
+        "blocks.feature-group"
       ],
       "required": true
     },

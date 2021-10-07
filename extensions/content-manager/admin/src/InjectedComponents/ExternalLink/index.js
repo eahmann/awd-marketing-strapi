@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useContentManagerEditViewDataManager } from 'strapi-helper-plugin';
-import EyeIcon from './view.svg';
+import React from "react";
+import styled from "styled-components";
+import { useContentManagerEditViewDataManager } from "strapi-helper-plugin";
+import EyeIcon from "./view.svg";
 
 const StyledExternalLink = styled.a`
   display: block;
@@ -42,19 +42,17 @@ const ExternalLink = () => {
     return null;
   }
 
-//   console.log(process.env.ENV_PATH)
-//   console.log(process.env.NODE_ENV)
-//   console.log(process.env.CLIENT_URL)
-//   console.log(process.env.CLIENT_PREVIEW_SECRET)
+    const CLIENT_URL = "http://hci.ahmann.dev"
+    const CLIENT_PREVIEW_SECRET = "fq6ndWgcEkCiddFtoJrTseJhIZw"
 
-//   if (!process.env.CLIENT_URL || !process.env.CLIENT_PREVIEW_SECRET) {
-//     return null;
-//   }
+  if (!CLIENT_URL || !CLIENT_PREVIEW_SECRET) {
+    return null;
+  }
 
   return (
     <li>
       <StyledExternalLink
-        href={`https://hci.ahmann.dev/api/preview?secret=fq6ndWgcEkCiddFtoJrTseJhIZw&slug=${modifiedData.slug}&locale=${modifiedData.locale}&apiID=${layout.apiID}&kind=${layout.kind}`}
+        href={`${CLIENT_URL}/api/preview?secret=${CLIENT_PREVIEW_SECRET}&slug=${modifiedData.slug}&locale=${modifiedData.locale}&apiID=${layout.apiID}&kind=${layout.kind}`}
         target="_blank"
         rel="noopener noreferrer"
         title="page preview"

@@ -13,6 +13,7 @@ const Dashboard = () => {
                 { Component: DeployButton },
             ]}
             />
+            {JSON.stringify(process.env.CLIENT_URL)}
         </Padded>
         <Padded right left size="md">
             <Deployments />
