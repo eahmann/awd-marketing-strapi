@@ -6,7 +6,7 @@
   "scripts": {
     "develop": "node ee/bin.js && strapi develop",
     "start": "node ee/bin.js && strapi start",
-    "build": "node ee/bin.js && strapi build",
+    "build": "node ee/bin.js && strapi build --clean",
     "strapi": "strapi"
   },
   "devDependencies": {},
