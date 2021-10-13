@@ -865,6 +865,26 @@
               }
             }
           },
+          "social": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "facebook": {
+                "type": "string"
+              },
+              "instagram": {
+                "type": "string"
+              },
+              "twitter": {
+                "type": "string"
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -888,6 +908,9 @@
                   "type": "component"
                 },
                 "contactInfo": {
+                  "type": "component"
+                },
+                "social": {
                   "type": "component"
                 },
                 "localizations": {
@@ -1391,6 +1414,26 @@
                 "type": "string"
               },
               "email": {
+                "type": "string"
+              }
+            }
+          },
+          "social": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "facebook": {
+                "type": "string"
+              },
+              "instagram": {
+                "type": "string"
+              },
+              "twitter": {
                 "type": "string"
               }
             }

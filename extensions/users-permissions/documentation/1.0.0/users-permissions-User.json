@@ -1250,6 +1250,31 @@
                 "type": "string"
               }
             }
+          },
+          "user_profile": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "users_permissions_user": {
+                "type": "string"
+              },
+              "firstName": {
+                "type": "string"
+              },
+              "lastName": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -1290,6 +1315,9 @@
             "default": false
           },
           "role": {
+            "type": "string"
+          },
+          "user_profile": {
             "type": "string"
           },
           "created_by": {
